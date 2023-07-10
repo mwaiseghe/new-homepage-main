@@ -1,0 +1,12 @@
+@media screen and (max-width:600) {
+    .mobile-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width:1050) {
+    .mobile-menu {
+        display: none;
+    }
+    
+}

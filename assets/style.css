@@ -5,13 +5,20 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    height: 100vh;
+    width:100vw;
+    height: 100%;
     font-size: 15px;
     background-color: hsl(36, 100%, 99%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    padding: 20px 200px 5px 200px;
+    margin-top: 30px;
+    height: 60%;
+    width: 70vw;
 }
 
 .navbar {
@@ -44,8 +51,14 @@ body {
 }
 
 .trending-title {
-    font-size: 800;
-    font-weight: bolder;
+    padding-right: 30px;
+    line-height: 0.9;
+}
+
+
+.trending-title h1 {
+    font-weight: 800;
+    font-size: 280%;
 }
 
 .trending-story {
@@ -56,6 +69,7 @@ body {
 
 .content p {
     padding-bottom: 20px;
+    font-size: small;
 
 }
 
@@ -71,7 +85,7 @@ body {
     background-color: hsl(240, 100%, 5%);
     grid-area: new;
     color:  hsl(36, 100%, 99%);
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .new-blog-item {
@@ -100,9 +114,10 @@ body {
     gap:20px;
 }
 
-.blog-content h3{
+.blog-content h2{
     color: hsl(236, 13%, 42%);
     padding-bottom: 5px;
+    font-size: x-larger;
 }
 
 .blog-content h5{
@@ -112,6 +127,7 @@ body {
 .blog-content p{
     color: hsl(236, 13%, 42%);
     padding-bottom: 5px;
+    font-size: small;
 }
 
 
