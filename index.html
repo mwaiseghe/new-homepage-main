@@ -22,6 +22,7 @@
 
     <div class="container">
         <div class="navbar">
+           <div class="desktop-navbar">
             <div class="logo">
                 <img src="./assets/images/logo.svg" alt="">
             </div>
@@ -33,13 +34,41 @@
                 <a href="">Trending</a>
                 <a href="">Categories</a>    
             </div>
+           </div>
             
+            <!-- Mobile HTML -->
+            <div class="navbar-mobile">
+                <div class="logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </div>
+            
+                <div class="navbar-toggle">
+                    <img src="./assets/images/icon-menu.svg" alt="">
+
+                    <div class="navbar-items-mobile">
+                        <a href="">Home</a>
+                        <a href="">New</a>
+                        <a href="">Popular</a>
+                        <a href="">Trending</a>
+                        <a href="">Categories</a>    
+                    </div>
+                </div>
+            
+                
+            </div>
         </div>
+
+        
+
 
         <div class="home-banner">
             <div class="trending">
                 <div class="trending-image">
-                    <img src="./assets/images/image-web-3-desktop.jpg" alt="" width="100%">
+                    <picture>
+                        <source media="(max-width:650px)" srcset="./assets/images/image-web-3-mobile.jpg">
+                        <img src="./assets/images/image-web-3-desktop.jpg" alt="" width="100%">
+                        
+                    </picture>
                 </div>
 
                <div class="trending-story">

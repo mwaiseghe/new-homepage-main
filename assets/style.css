@@ -21,20 +21,24 @@ body {
     width: 70vw;
 }
 
-.navbar {
+.desktop-navbar {
     padding: 20px;
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.navbar .navbar-items {
+.desktop-navbar .navbar-items {
     text-align: right;
 }
 
-.navbar .navbar-items a{
+.desktop-navbar .navbar-items a{
     text-align: right;
     text-decoration: none;
     padding-left: 20px
+}
+
+.navbar-items-mobile {
+    display: none;
 }
 
 .home-banner {
@@ -44,6 +48,17 @@ body {
     gap:20px;
     padding-bottom: 20px;
 
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.navbar-toggle:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .trending {
@@ -137,4 +152,59 @@ body {
 
 .blog-content {
     grid-area: blog-content;
+}
+
+@media screen and (max-width:1050px){
+    .home-banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-blogs {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:10px;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .desktop-navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }  
+
+    .navbar-toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+    }
+    .home-banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .trending-story {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trending-title h1 {
+        font-weight: 800;
+        font-size: 200%;
+    }
+
+    .top-blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
